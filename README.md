@@ -14,9 +14,8 @@ iOS Offline Face Recognition (written in Swift).
     let faceRec = FaceRecOffline()
 do {
 
-           let result = try faceRec.process(on: "YOUR IMAGE"!)
-           let searchResult = try faceRec.search(with: "YOUR IMAGE", in: [ARRAY])
-
+    let result = try faceRec.process(on: "YOUR IMAGE"!)
+    let searchResult = try faceRec.search(with: "YOUR IMAGE", in: [ARRAY])
 
 } catch _ {
     print("Something went wrong :(")
