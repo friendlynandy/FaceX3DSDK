@@ -21,7 +21,7 @@ do {
     print("Something went wrong :(")
 }
 ```
-#### Camera
+### Camera
 For a better image for processing.
 
 ```swift
@@ -30,7 +30,8 @@ For a better image for processing.
     faceRec.openCamera()
     
 ```
-#### UICameraCaptureDelegate
+### Delegate
+UICameraCaptureDelegate
 
 ```swift
 
