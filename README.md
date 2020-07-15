@@ -1,6 +1,5 @@
 # FaceRecOfflineSDK
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/FaceRecOfflineSDK.svg)](https://img.shields.io/cocoapods/v/FaceRecOfflineSDK.svg)
 ![Cocoapods](https://img.shields.io/cocoapods/v/FaceRecOfflineSDK)
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)
