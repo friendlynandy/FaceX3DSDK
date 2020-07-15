@@ -21,6 +21,26 @@ do {
     print("Something went wrong :(")
 }
 ```
+#### Camera
+For a better image for processing.
+
+```swift
+
+    faceRec.delegate = self
+    faceRec.openCamera()
+    
+```
+#### UICameraCaptureDelegate
+
+```swift
+
+    func cameraController(cameraController: UIViewController, didFinishCapture image:UIImage){
+    }
+  
+    func cameraControllerDidCancel(cameraController: UIViewController){
+     }
+
+```
 
 ## Version Compatibility
 
