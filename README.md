@@ -8,7 +8,7 @@
 ## Introduction
 Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device Face Recognition into your iOS applications.(written in Swift)
 
-## 📑 Index
+## Index
 * [Usage](#usage)
     * [Camera](#camera)
     * [Delegate](#delegate)
