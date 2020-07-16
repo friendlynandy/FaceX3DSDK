@@ -5,11 +5,8 @@
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)
 [![Licence](https://img.shields.io/cocoapods/l/LivenessSDK?color=red&logo=red)](https://img.shields.io/cocoapods/l/LivenessSDK?color=red&logo=red)
 
-
-# iOS Offline Face Recognition (written in Swift).
-
 ## Introduction
-Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device Face Recognition into your iOS applications.
+Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device Face Recognition into your iOS applications.(written in Swift)
 
 ## 📑 Index
 * [Usage](#usage)
@@ -17,7 +14,7 @@ Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device 
     * [Delegate](#delegate)
 * [Version Compatibility](#version-compatibility)
 * [Installation](#installation)
-  * [Cocoapods](#using-cocoapods)
+  * [Cocoapods](#cocoapods)
 * [Contact](#contact)
 
 
