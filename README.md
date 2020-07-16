@@ -16,7 +16,7 @@ Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device 
     * [Camera](#camera)
     * [Delegate](#delegate)
 * [Version Compatibility](#version-compatibility)
-* [Installation](#-installation)
+* [Installation](#installation)
   * [Cocoapods](#using-cocoapods)
 * [Contact](#contact)
 
