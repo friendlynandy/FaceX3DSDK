@@ -5,12 +5,12 @@
 [![Licence](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)
 
 ## Introduction
-3D Face reconstruction using just mobile camera.(written in Swift)
+3D Face reconstruction iOS Companion SDK for capturing input images using  mobile camera. (written in Swift)
 
 ## Index
+* [Version Compatibility](#version-compatibility)
 * [Usage](#usage)
     * [Delegate](#delegate)
-* [Version Compatibility](#version-compatibility)
 * [Installation](#installation)
   * [Manual](#manual)
   * [Update Info.plist](#update-infoplist)
@@ -18,8 +18,16 @@
    * [Steps](#steps)
    * [Thresholds](#thresholds)
 * [Localization Strings](#localization-strings)
-* [Contact](#contact)
 
+## Version Compatibility
+
+Current Swift compatibility breakdown:
+
+| Swift Version | Framework Version |
+| ------------- | ----------------- |
+| 5.0           | 1.x               |
+
+[all releases]: https://github.com/friendlynandy/FaceX3DSDK/releases
 
 ## Usage
 
@@ -48,16 +56,6 @@ FaceX3DDelegate
      }
 
 ```
-
-## Version Compatibility
-
-Current Swift compatibility breakdown:
-
-| Swift Version | Framework Version |
-| ------------- | ----------------- |
-| 5.0           | 1.x               |
-
-[all releases]: https://github.com/friendlynandy/FaceX3DSDK/releases
 
 ## Installation
 ### Manual
@@ -103,8 +101,6 @@ You can set some properties for FaceX3DSDK.
 | **Face outline image**(facwOutlineImage)   | `UIImage` | `UIImage(named: "faceOutline")` | 
 
 
-
-
 ### Thresholds
 | Property | Default | 
 | ------- | ------- | 
@@ -128,16 +124,3 @@ Add these strings to your respected Localization.Strings language file
 "Thank you"
 
 ```
-
-
-## 📋 Supported OS & SDK Versions
-* iOS 13.0+
-* iPadOS 13.0+
-* Swift 5
-
-## Contact
-
-Feel free to get in touch.
-
-* Website: <https://facex.io>
-* Twitter: [@Facex](http://twitter.com/facex)
