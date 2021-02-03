@@ -117,13 +117,15 @@ You can set some properties for FaceX3DSDK.
 Add these strings to your respected Localization.Strings language file
 
 ```
-"Please blink your eyes"
-"Please open your mouth"
-"Please turn your face to right and left"
-"Thank You"
-"No face Detected"
-"Perfect"
-"Please bring your face inside face outline above"
+"Please bring face in front of camera"
+"Face Detected"
+"Please come forward"
+"Please bring your face inside the border"
+"Please look straight"
+"Perfect! Be still!"
+"Please turn left"
+"Please turn right"
+"Thank you"
 
 ```
 
