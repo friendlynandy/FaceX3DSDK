@@ -1,6 +1,5 @@
 # FaceX3DSDK
 
-![Cocoapods](https://img.shields.io/cocoapods/v/FaceX3DSDK)
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)
 [![Licence](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)
@@ -10,11 +9,11 @@
 
 ## Index
 * [Usage](#usage)
-    * [Camera](#camera)
     * [Delegate](#delegate)
 * [Version Compatibility](#version-compatibility)
 * [Installation](#installation)
   * [Manual](#manual)
+  * [Update Info.plist](#update Info.plist)
 * [Contact](#contact)
 
 
@@ -57,7 +56,7 @@ Current Swift compatibility breakdown:
 [all releases]: https://github.com/friendlynandy/FaceX3DSDK/releases
 
 ## Installation
-### Manual installation
+### Manual
 
 You will be required to do few steps:
 
