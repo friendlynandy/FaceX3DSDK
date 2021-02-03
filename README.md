@@ -13,7 +13,7 @@
 * [Version Compatibility](#version-compatibility)
 * [Installation](#installation)
   * [Manual](#manual)
-  * [Update Info.plist](#update Info.plist)
+  * [Update Info.plist](#update-infoplist)
 * [Contact](#contact)
 
 
