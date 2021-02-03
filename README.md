@@ -1,12 +1,12 @@
-# FaceRecOfflineSDK
+# FaceX3DSDK
 
-![Cocoapods](https://img.shields.io/cocoapods/v/FaceRecOfflineSDK)
+![Cocoapods](https://img.shields.io/cocoapods/v/FaceX3DSDK)
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)
-[![Licence](https://img.shields.io/cocoapods/l/LivenessSDK?color=red&logo=red)](https://img.shields.io/cocoapods/l/LivenessSDK?color=red&logo=red)
+[![Licence](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)](https://img.shields.io/cocoapods/l/FaceX3DSDK?color=red&logo=red)
 
 ## Introduction
-Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device Face Recognition into your iOS applications.(written in Swift)
+3D Face reconstruction using just mobile camera.(written in Swift)
 
 ## Index
 * [Usage](#usage)
@@ -14,41 +14,34 @@ Brought to you by FaceX.io, this iOS SDK can now be used to integrate on-device 
     * [Delegate](#delegate)
 * [Version Compatibility](#version-compatibility)
 * [Installation](#installation)
-  * [Cocoapods](#cocoapods)
+  * [Manual](#manual)
 * [Contact](#contact)
 
 
 ## Usage
 
 ```swift
-    let faceRec = FaceRecOffline()
-do {
-
-    let result = try faceRec.process(on: "YOUR IMAGE"!)
-    let searchResult = try faceRec.search(with: "YOUR IMAGE", in: [ARRAY])
-
-} catch _ {
-    print("Something went wrong :(")
-}
-```
-### Camera
-For a better image for processing.
-
-```swift
-
-    faceRec.delegate = self
-    faceRec.openCamera()
+    let faceX3D = FaceX3DSDK()
     
+   //Delegates for successful 3d files creation and errors if any
+   faceX3D.delegate = self
+   
+   //Start camera for capturing images with on screen directions
+   faceX3D.start3DImaging()
+
+
 ```
 ### Delegate
-UICameraCaptureDelegate
+FaceX3DDelegate
 
 ```swift
 
-    func cameraController(cameraController: UIViewController, didFinishCapture image:UIImage){
-    }
+    func didCreate3DObject(objectAt url: URL){
+    //url of the 3D .obj file created
+     }
   
-    func cameraControllerDidCancel(cameraController: UIViewController){
+    func didFailWithError(error: Error){
+   
      }
 
 ```
@@ -61,19 +54,35 @@ Current Swift compatibility breakdown:
 | ------------- | ----------------- |
 | 5.0           | 1.x               |
 
-[all releases]: https://github.com/friendlynandy/FaceRecOfflineSDK/releases
+[all releases]: https://github.com/friendlynandy/FaceX3DSDK/releases
 
 ## Installation
+### Manual installation
 
-#### CocoaPods
+You will be required to do few steps:
 
-Add the following line to your Podfile.
+Download FaceX3DSDK.framework and copy it into `Embedded Binaries` section. Don't forget to select `Copy items if needed`.
 
+Now you can import your dependencies e.g.:
+
+ObjC:
+```objective-c
+@import FaceX3DSDK;
 ```
-pod "FaceRecOfflineSDK"
+Swift:
+```swift
+import FaceX3DSDK
 ```
 
-Then run `pod install` with CocoaPods 0.36 or newer.
+### Update Info.plist
+
+In order to use camera, you need to have `NSCameraUsageDescription`
+entries in your `Info.plist`.
+
+These entries are required by Apple. User will be prompted for the Camera usage permissions with your provided text only when he tries to use the camera.
+
+`NSCameraUsageDescription` - When user tries to use Camera
+
 
 ## Contact
 
