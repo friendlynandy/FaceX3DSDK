@@ -24,7 +24,7 @@
 ## Usage
 
 ```swift
-    let faceX3D = FaceX3DSDK()
+    let faceX3D = FaceX3D()
     
    //Delegates for successful 3d files creation and errors if any
    faceX3D.delegate = self
