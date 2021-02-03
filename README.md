@@ -14,6 +14,10 @@
 * [Installation](#installation)
   * [Manual](#manual)
   * [Update Info.plist](#update-infoplist)
+* [Customization](#customization)
+   * [Steps](#steps)
+   * [Thresholds](#thresholds)
+* [Localization Strings](#localization-strings)
 * [Contact](#contact)
 
 
@@ -82,6 +86,52 @@ These entries are required by Apple. User will be prompted for the Camera usage 
 
 `NSCameraUsageDescription` - When user tries to use Camera
 
+
+## Customization
+
+You can set some properties for FaceX3DSDK.
+
+### Steps
+| Steps | Value | Default | 
+| ------- | ------- |------- | 
+| **API Base URL**(baseURL)  | `String` | `...` | 
+| **Face outline border with face**(faceFoundBorderColor)   | `cgColor` | `UIColor.red.cgColor` | 
+| **Face outline border without face**(faceNotFoundBorderColor)   | `cgColor` | `UIColor.gray.cgColor` | 
+| **Progress bar right color**(rightProgressColor)   | `UIColor` | `UIColor.white` | 
+| **Progress bar left color**(leftProgressColor)   | `UIColor` | `UIColor.blue` | 
+| **Face outline border width**(borderWidth)   | `CGFloat` | `4` | 
+| **Face outline image**(facwOutlineImage)   | `UIImage` | `UIImage(named: "faceOutline")` | 
+
+
+
+
+### Thresholds
+| Property | Default | 
+| ------- | ------- | 
+| **Max left yaw**(maxLeftYaw)  | `-0.30` | 
+| **Max right yaw**(maxRightYaw)  | `0.35` | 
+| **Min left yaw**(minLeftYaw)  | `-0.35` | 
+| **min right yaw**(minRightYaw)  | `0.30` | 
+
+## Localization Strings
+Add these strings to your respected Localization.Strings language file
+
+```
+"Please blink your eyes"
+"Please open your mouth"
+"Please turn your face to right and left"
+"Thank You"
+"No face Detected"
+"Perfect"
+"Please bring your face inside face outline above"
+
+```
+
+
+## 📋 Supported OS & SDK Versions
+* iOS 12.0+
+* iPadOS 13.0+
+* Swift 5
 
 ## Contact
 
