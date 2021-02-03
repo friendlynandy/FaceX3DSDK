@@ -131,7 +131,7 @@ Add these strings to your respected Localization.Strings language file
 
 
 ## 📋 Supported OS & SDK Versions
-* iOS 12.0+
+* iOS 13.0+
 * iPadOS 13.0+
 * Swift 5
 
